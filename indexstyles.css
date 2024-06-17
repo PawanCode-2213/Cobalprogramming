@@ -88,6 +88,7 @@ body {
         height: 100%;
         width: 200px;
         transition: right 0.3s;
+        margin-top: 60px;
         padding-top: 60px;
     }
 
