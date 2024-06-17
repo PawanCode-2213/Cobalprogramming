@@ -115,14 +115,10 @@ body {
     }
 
     #menuClose {
-        display: block;
+        display: none; /* Initial state hidden */
         position: absolute;
         top: 20px;
         right: 20px;
-    }
-
-    #menuClose {
-        display: none;
     }
 
     .get-started {
