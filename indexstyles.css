@@ -25,7 +25,6 @@ body {
     padding: 0 20px;
     color: #fff;
     position: relative;
-    width: 100%;
 }
 
 .logo_image img {
@@ -92,8 +91,7 @@ body {
         right: -200px;
         background-color: #1E90FF;
         height: 100%;
-        width: 100%; /* Ensure it doesn’t exceed the viewport */
-        max-width: 200px; /* Ensure it doesn’t exceed */
+        width: 200px; /* Ensure it doesn’t exceed */
         transition: right 0.3s;
         margin-top: 60px;
         padding-top: 60px;
@@ -108,12 +106,12 @@ body {
         right: 0;
     }
 
-    .hero-quote-container{
+    .hero-quote-container {
         margin-top: 30px;
         order: 2;
     }
 
-    .hero-video-container{
+    .hero-video-container {
         order: 1;
     }
 
@@ -138,8 +136,6 @@ body {
         display: none !important;
     }
 }
-
-
 
 
 /*landing page*/
