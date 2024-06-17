@@ -120,6 +120,10 @@ body {
         right: 20px;
     }
 
+    #menuClose {
+        display: none;
+    }
+
     .get-started {
         display: none;
     }
