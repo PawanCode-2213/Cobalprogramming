@@ -76,6 +76,10 @@ body {
     font-size: 24px;
     color: white;
     cursor: pointer;
+    position: absolute; /* Ensure the icons are positioned absolutely */
+    top: 20px; /* Position near the top */
+    right: 20px; /* Position near the right */
+    z-index: 1001; /* Ensure the icons are above other elements */
 }
 
 @media (max-width: 768px) {
@@ -88,13 +92,14 @@ body {
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -200px;
+        right: -100%;
         background-color: #1E90FF;
         height: 100%;
         width: 200px; /* Ensure it doesn’t exceed */
         transition: right 0.3s;
         margin-top: 60px;
         padding-top: 60px;
+        z-index: 1000; /* Ensure it is below the icons */
     }
 
     .nav-links li {
@@ -254,7 +259,7 @@ body {
 
 /*if I wnat to show on smaller screen*/
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .icons-for-languages {
         justify-content: flex-start;
     }
@@ -266,15 +271,15 @@ body {
     .language-icon-css {
         padding: 10px;
     }
-} */
+} 
 
 /*if not than*/
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .icons-for-languages{
         display: none;
     }
-}
+} */
 
 /* Our Courses Section */
 
@@ -1062,5 +1067,4 @@ button[type="submit"]:hover {
         color: #ffffff;
     }
 
-    /* Media Queries for Responsiveness */
 
