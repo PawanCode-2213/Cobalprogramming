@@ -1,29 +1,15 @@
 
-document.addEventListener("DOMContentLoaded", function() {
-    const navMenu = document.querySelector(".nav-links");
-    const menuToggle = document.getElementById("menuToggle");
-    const menuClose = document.getElementById("menuClose");
+function showMenu() {
+    document.querySelector('.nav-links').classList.add('show');
+    document.getElementById('menuToggle').style.display = 'none';
+    document.getElementById('menuClose').style.display = 'block';
+}
 
-    function showMenu() {
-        navMenu.classList.add("show");
-        menuToggle.style.display = "none";
-        menuClose.style.display = "block";
-    }
-
-    function hideMenu() {
-        navMenu.classList.remove("show");
-        menuToggle.style.display = "block";
-        menuClose.style.display = "none";
-    }
-
-    menuToggle.addEventListener("click", showMenu);
-    menuClose.addEventListener("click", hideMenu);
-});
-
-
-
-
-
+function hideMenu() {
+    document.querySelector('.nav-links').classList.remove('show');
+    document.getElementById('menuToggle').style.display = 'block';
+    document.getElementById('menuClose').style.display = 'none';
+}
 
 
 
@@ -63,10 +49,12 @@ $(document).ready(function() {
         };
 
         // Submit the form via AJAX to Formspree
+        
         submitForm(formData, 'https://formspree.io/f/mqkrrjer'); // Replace with your actual Formspree endpoint
     });
 
     // Function to submit form data via AJAX
+
     function submitForm(formData, backendURL) {
         $.ajax({
             type: 'POST',
