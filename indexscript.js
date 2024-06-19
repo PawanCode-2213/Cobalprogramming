@@ -63,12 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     
-    
-// Form Submission and reset value 
+    //Form Submission JS
 
+// jQuery document ready function
+jQuery(document).ready(function($) {
 
-$(document).ready(function() {
-    // Handling main contact form
+    // Handling main contact form submission
     $('#myForm').on('submit', function(e) {
         e.preventDefault(); // Prevent form submission
         
@@ -82,17 +82,17 @@ $(document).ready(function() {
         // Collect form data
         var formData = {
             name: $('#name').val(),
-            email: $('#emailMain').val(),
-            contact: phoneNumber, // Use the validated phone number
+            email: $('#email').val(),
+            contact: phoneNumber,
             course: $('#course').val(),
             message: $('#message').val()
         };
 
         // Submit the form via AJAX to Formspree
-        submitForm(formData, 'https://formspree.io/f/mqkrrjer'); // Replace with your actual Formspree endpoint
+        submitForm(formData, 'https://formspree.io/f/mqkrrjer');
     });
 
-    // Handling subscription form
+    // Handling subscription form submission
     $('#subscribeForm').on('submit', function(e) {
         e.preventDefault(); // Prevent form submission
 
@@ -102,12 +102,10 @@ $(document).ready(function() {
         };
 
         // Submit the form via AJAX to Formspree
-        
-        submitForm(formData, 'https://formspree.io/f/mqkrrjer'); 
+        submitForm(formData, 'https://formspree.io/f/mqkrrjer');
     });
 
     // Function to submit form data via AJAX
-
     function submitForm(formData, backendURL) {
         $.ajax({
             type: 'POST',
@@ -115,12 +113,14 @@ $(document).ready(function() {
             data: formData,
             dataType: 'json',
             success: function(response) {
+                console.log('Form submitted successfully!', response);
                 alert('Form submitted successfully!');
                 // Optionally clear the form after successful submission
                 $('#myForm')[0].reset(); // Clear main contact form
                 $('#subscribeForm')[0].reset(); // Clear subscription form
             },
             error: function(error) {
+                console.error('Error submitting form:', error);
                 alert('Error submitting form. Please try again later.');
             }
         });
@@ -131,5 +131,6 @@ $(document).ready(function() {
         var phoneRegex = /^[0-9]{10}$/; // 10 digits only
         return phoneRegex.test(phone);
     }
+
 });
 
