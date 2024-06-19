@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobalt Programming Website</title>
+    <link rel="stylesheet" href="indexstyles.css">
+    <link rel="stylesheet" href="courses.css">
+    <script src="indexscript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Cobalt Programming Institute offers top-notch programming courses to boost your coding skills.">
+    <script src="https://kit.fontawesome.com/1ddee84911.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+     
+    <header class="top-header" id="home-header">
+        <nav class="nav" id="navMenu">
+            <div class="logo_image">
+                <img src="Images/logo.png" alt="Cobalt Logo" width="50px" height="50px">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#our-courses">Courses</a></li>
+                <li><a href="index.html#about-us">About</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+            <button class="get-started">REGISTER</button>
+            <i class="fas fa-bars" id="menuToggle" onclick="showMenu()"></i>
+            <i class="fas fa-times" id="menuClose" onclick="hideMenu()"></i>
+        </nav>
+    </header>
+
+    <!-- Course Banner -->
+
+    <section class="course-banner">
+        <div class="web-development-course-heading">
+            <h1>Web Development</h1>
+            <p>Web development refers to the process of creating websites and web applications. It involves several key technologies and skills.</p>
+        </div>
+        <article class="web-development-course-details">
+            <h2>Dive into Web Development: Your Journey to Building Websites</h2>
+            <p class="first-paragraph">The web is ever-evolving, and so is the world of web development. If you've ever dreamt of creating your own website or contributing to the digital landscape, this course is your perfect launchpad!</p>
+            
+            <p><span class="paragraph-heading">Learning by Doing: A Hands-on Approach</span><br>
+                This course isn't just about theory. We'll be putting our knowledge into action with engaging projects throughout. Get ready to:</p>
+            
+            <p><span class="paragraph-heading">Craft a basic website:</span> Using HTML, you'll structure your webpages, adding headings, paragraphs, images, and links. Here's a simple HTML code example to create a heading and a paragraph:</p>
+            <figure>
+                <img src="Images/HTML EXAMPLE.png" alt="HTML example">
+                <figcaption>Example of HTML code to create a heading and a paragraph.</figcaption>
+            </figure>
+            
+            <p> <span class="paragraph-heading">Styling with CSS:</span> CSS (Cascading Style Sheets) is like the magic paintbrush that brings your webpage to life. It allows you to define styles for your HTML elements, controlling aspects like font size, color, layout, and positioning.</p>
+            <figure>
+                <img class= "css-image" src="Images/CSS-Style.png" alt="CSS example">
+                <figcaption>Example of CSS styles applied to HTML elements.</figcaption>
+            </figure>
+            
+            <p><span class="paragraph-heading">Adding Interactivity: JavaScript></span><br>
+                While HTML and CSS make your webpage look good, JavaScript brings it to life. It's the scripting language that adds interactivity and dynamic elements. Imagine adding a button that changes the color of the text when clicked. That's the power of JavaScript! Here's a basic JavaScript code to achieve:</p>
+            <figure>
+                <img src="Images/JavaScript.png" alt="JavaScript example">
+                <figcaption>Example of JavaScript code for adding interactivity.</figcaption>
+            </figure>
+            
+            <p class="closing-statement">These are just a taste of the coding adventures you'll have in this course. With each project, you'll solidify your understanding and build a portfolio showcasing your newfound skills.</p>
+    
+            <div class="conclusion-info">
+                <h2>Beyond the Basics</h2>
+                <p>The course doesn't stop there. We'll delve into:</p>
+                <ul class="point-for-conclusion">
+                    <li><span>Web Development Tools:</span> Explore essential tools like code editors and browsers to streamline your development workflow.</li>
+                    <li><span>Responsive Design:</span> Learn to design websites that adapt seamlessly to different screen sizes, ensuring a great user experience on all devices.</li>
+                    <li><span>Web Design Principles:</span> Gain an understanding of user interface (UI) and user experience (UX) design concepts to craft websites that are not only functional but also visually appealing and user-friendly.</li>
+                    <li>By the end of this course, you'll be able to:</li>
+                    <li>Build static websites with HTML and CSS.</li>
+                    <li>Implement interactivity using JavaScript.</li>
+                    <li>Work effectively with web development tools.</li>
+                    <li>Design responsive websites for optimal viewing across devices.</li>
+                    <li>Apply basic web design principles.</li>
+                </ul>
+                <p >This is just the first step on your exciting web development journey. With the skills and knowledge gained here, you'll be well-equipped to explore further specializations like front-end development, back-end development, or full-stack development, and carve your niche in the ever-growing world of web creation!</p>
+            </div>
+        </article>
+    </section>
+    
+    <!-- Footer -->
+
+    <footer class="footer-section">
+        <div class="master-footer-section-container">
+            <div class="company-info-container">
+                <div class="address-container">
+                    <h2>Address</h2>
+                    <p>Cobalt Programming Institute Chamba <br> Sultanpur, Near Degree College Sultanpur <br>
+                        Chamba, Himachal Pradesh, 176310</p>
+                </div>
+                <div class="contact-details-container">
+                    <ul>
+                        <li><a href="mailto:support@cobaltprogramming.com"><i class="fa fa-envelope"></i> support@cobaltprogramming.com</a></li>
+                        <li><a href="tel:+918448714780"><i class="fa fa-phone"></i> +91 8448714780</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-quick-links-container">
+                <h2>Quick Links</h2>
+                <ul class="footer-quick-links-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#our-courses">Courses</a></li>
+                    <li><a href="index.html#about-us">About</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="subscribe-social-media-container">
+                <h2>Subscribe for daily updates</h2>
+                <form id="subscribeForm"action="https://formspree.io/f/mqkrrjer" method="POST">
+                    <div class="form-group-footer">
+                        <label for="email"> Email:</label>
+                        <input type="email" id="emailSubscribe" name="email" placeholder="Enter your email ID" required>
+                    </div>
+                    <button type="submit" class="subscribe-submit-button">Submit</button>
+                </form>
+                <div class="social-media-container">
+                    <ul class="social-media-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>&copy; 2024 Cobalt programming Institute Chamba. All rights reserved.</p>
+            <p>Powered By Pawan Kumar with Love❤️.</p>
+        </div>
+    </footer>
+
+    
+
+
+
+</body>
+</html>

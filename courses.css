@@ -1,0 +1,256 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #f9f9f9;
+}
+
+
+/* Header */
+.top-header {
+    background-color: #1E90FF;
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.get-started {
+    background-color: #ff4500;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.get-started:hover {
+    background-color: #45a049;
+}
+
+#menuToggle, #menuClose {
+    display:none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #1E90FF;
+        height: 100%;
+        width: 200px; /* Ensure it doesn’t exceed */
+        transition: right 0.3s;
+        margin-top: 60px;
+        padding-top: 60px;
+        z-index: 1000; /* Ensure it is below the icons */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        right: 0;
+    }
+
+    .hero-quote-container {
+        margin-top: 30px;
+        order: 2;
+    }
+
+    .hero-video-container {
+        order: 1;
+    }
+
+    #menuToggle {
+        display: block;
+    }
+
+    #menuClose {
+        display: none; /* Initial state hidden */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .get-started {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    #menuToggle, #menuClose {
+        display: none !important;
+    }
+
+}
+
+/* CSS style for article */
+
+/* Global styles */
+
+.container {
+    border: 2px soid red;
+    background-color: #ffffff;
+}
+
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #1c1c1c;
+}
+
+/* Course banner section */
+
+.course-banner {
+    margin: 50px;
+    width: 70%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+
+}
+
+.web-development-course-heading {
+    text-align: center;
+}
+
+.web-development-course-heading h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.web-development-course-heading p {
+    font-size: 20px;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+.web-development-course-details {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.web-development-course-details h2 {
+    font-size: 25px;
+    color: #1c1c1c;
+    margin-bottom: 15px;
+}
+
+figure img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.first-paragraph {
+    color: #1c1c1c;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.paragraph-heading {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.CSS-paragraph, .javascript-paragraph, .closing-statement {
+    margin-top: 20px;
+}
+
+.CSS-paragraph, .javascript-paragraph, .closing-statement {
+    margin-top: 20px;
+}
+
+.conclusion-info {
+    background-color: #f0efef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.conclusion-info h2 {
+    color: #1c1c1c;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.point-for-conclusion {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.point-for-conclusion li {
+    margin-bottom: 5px;
+}
+
+.point-for-conclusion span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .web-development-course-heading {
+        padding: 10px;
+    }
+    
+    .web-development-course-details {
+        padding: 10px;
+    }
+    
+
+}
