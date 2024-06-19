@@ -1,17 +1,70 @@
 
-function showMenu() {
-    document.querySelector('.nav-links').classList.add('show');
-    document.getElementById('menuToggle').style.display = 'none';
-    document.getElementById('menuClose').style.display = 'block';
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const navMenu = document.querySelector(".nav-links");
+    const menuToggle = document.getElementById("menuToggle");
+    const menuClose = document.getElementById("menuClose");
+    const navLinks = document.querySelectorAll(".nav-links a");
 
-function hideMenu() {
-    document.querySelector('.nav-links').classList.remove('show');
-    document.getElementById('menuToggle').style.display = 'block';
-    document.getElementById('menuClose').style.display = 'none';
-}
+    function showMenu() {
+        navMenu.classList.add("show");
+        menuToggle.style.display = "none";
+        menuClose.style.display = "block";
+    }
+
+    function hideMenu() {
+        navMenu.classList.remove("show");
+        menuToggle.style.display = "block";
+        menuClose.style.display = "none";
+    }
+
+    menuToggle.addEventListener("click", showMenu);
+    menuClose.addEventListener("click", hideMenu);
+
+    // Add event listener to each nav link
+    navLinks.forEach(link => {
+        link.addEventListener("click", hideMenu);
+    });
+});
 
 
+
+// About US section JSON
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const collapsibles = document.querySelectorAll('.collapsible');
+        collapsibles.forEach(button => {
+            button.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    });
+
+    // FAQ Selection
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                button.classList.toggle('active');
+    
+                if (button.classList.contains('active')) {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    
+// Form Submission and reset value 
 
 
 $(document).ready(function() {
@@ -50,7 +103,7 @@ $(document).ready(function() {
 
         // Submit the form via AJAX to Formspree
         
-        submitForm(formData, 'https://formspree.io/f/mqkrrjer'); // Replace with your actual Formspree endpoint
+        submitForm(formData, 'https://formspree.io/f/mqkrrjer'); 
     });
 
     // Function to submit form data via AJAX
