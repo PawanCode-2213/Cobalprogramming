@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
             dataType: 'json',
             success: function(response) {
                 console.log('Form submitted successfully!', response);
-                alert('Form submitted successfully!');
+                alert('Form submitted successfully! We will get back to you within 24 hours.');
                 // Optionally clear the form after successful submission
                 $('#myForm')[0].reset(); // Clear main contact form
                 $('#subscribeForm')[0].reset(); // Clear subscription form
