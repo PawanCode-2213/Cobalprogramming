@@ -160,7 +160,7 @@ body {
 }
 
 .hero-quote-container h1 {
-    font-size: 35px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -648,6 +648,121 @@ body {
     }
 }
 
+
+/* About US section */
+
+
+
+.about-us-container {
+    padding: 40px 30px;
+    background-color: #fff;
+    margin: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-us-info {
+    color: #333;
+}
+
+.about-us-info h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.collapsible {
+    background-color: #9927ca;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.4s;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.collapsible:hover, .collapsible.active {
+    background-color: #dae0e1;
+    color: black;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content p, .content ul {
+    padding: 18px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.content ul {
+    list-style-type: circle;
+    padding-left: 40px;
+}
+
+/* Frequantly Aksed questions style */
+
+.faq-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 80px 30px 20px 30px;
+}
+
+.faq-section h1 {
+    text-align: center;
+    color: #000408;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    color: #053f7a;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e0e0e0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-top: -1px;
+}
+
+
+
 /* Form Submission Section */
 
 .registration-form-container{
@@ -655,7 +770,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 40px 20px;
-    margin: 0 auto;
+    margin: 30px auto;
     background-image: url(https://wsrv.nl/?url=https%3A%2F%2Fcodedamn.com%2Fassets%2Flanding-page-assets%2Fbeams.jpeg&w=2610&q=82&output=webp);
 }
 
